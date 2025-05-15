@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meraki Evolution</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+</head>
+<body>
+  <h1>🛍️ Bienvenidos a Meraki Evolution</h1>
+
+  <div>
+    <label for="categoria">Filtrar por categoría:</label>
+    <select id="categoria" onchange="filtrarCategoria()">
+      <option value="todos">Todos</option>
+      <option value="ropa">Ropa</option>
+      <option value="accesorios">Accesorios</option>
+      <option value="personalizados">Personalizados</option>
+    </select>
+  </div>
+
+  <div id="productos"></div>
+
+  <div class="carrito">
+    <h2>🛒 Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p><strong>Total: $<span id="total">0.00</span></strong></p>
+    <p class="cantidad">Cantidad de productos: <span id="cantidad-productos">0</span></p>
+    <button class="vaciar" onclick="vaciarCarrito()">🧼 Vaciar Carrito</button>
+    <button class="finalizar" onclick="finalizarCompra()">✅ Finalizar Compra</button>
+    <div id="paypal-button-container"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
