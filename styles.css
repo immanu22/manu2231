@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ff8c42;
+  color: #fff8e1;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #fff8e1;
+  font-size: 3em;
+}
+
+.producto {
+  border: 2px solid #ffda77;
+  background: #fff8e1;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px;
+  display: inline-block;
+  width: 230px;
+  text-align: center;
+  color: #ff8c42;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.producto button,
+.carrito button {
+  background-color: #ff6700;
+  border: none;
+  color: white;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.producto button:hover,
+.carrito button:hover {
+  background-color: #e65100;
+}
+
+.carrito {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff8e1;
+  border-radius: 12px;
+  text-align: left;
+  display: inline-block;
+  width: 350px;
+  border: 2px solid #ffda77;
+  color: #ff8c42;
+}
+
+.carrito h2 {
+  font-family: 'Playfair Display', serif;
+  color: #ff6700;
+}
+
+.carrito button.vaciar {
+  background-color: #d32f2f;
+  margin-top: 10px;
+}
+
+.cantidad {
+  font-weight: bold;
+  color: #ff6700;
+}
+
+select {
+  padding: 8px;
+  margin: 20px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1em;
+}
